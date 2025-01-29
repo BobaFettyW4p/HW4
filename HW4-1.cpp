@@ -1,6 +1,12 @@
 #include "HW4-1.h"
 #include <iostream>
-
+/**
+ * This is a brief debugging program to be used alongside HW4-1.h
+ * Our operator+ and operator+= overloads are implented in the header inside the mpcs51044:Matrix class definition
+ * This program is used to ensure they are implemented correctly
+ * First, we initialize 2 3x3 matrices, mpcs51044:Matrix matrix 1 and mpcs51044:Matrix matrix 2
+ * We add them using them using the overloaded + and += operators, then print out the results
+ */
 int main() {
     // Create two 3x3 matrices
     mpcs51044::Matrix<3, 3> matrix1 = {
