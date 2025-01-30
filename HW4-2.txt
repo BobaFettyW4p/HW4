@@ -4,7 +4,7 @@
  The genericized implentation of Matrix.determinant() is a recursive function that calls itself multiple times to calculate the determinant
  With an example of a 3x3 matrix, it will call itself recursively multiple times with  various sub-matrices of size 2x2
  When our direct implementation of Matrix.determinant() is included, the genericized Matrix.determinant() function will 
- instead call the more specific implementation, which is more efficient
+ instead call the more specific implementation when it applicable, which is more efficient
  Prior to our direct implementation (or if our direct implementation is commented out), the generic Matrix.determinant()
  function would simply call itself again instead.
  Since the direct implementation is more efficient than the generic implementation at calculating the determinant of 2x2 matrices (at the cost of being unable to operate on matrices of any other size),
