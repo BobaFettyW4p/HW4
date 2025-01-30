@@ -50,16 +50,12 @@ int main() {
 	/**
 	 * This block is designed to test my static_assert statements in the header file
 	 * They ensure that any operator+ or operator+= overloads only attempt to add
-	 * matrices that are the same size. If you try to run this code as it, it will compile and run correctly
+	 * matrices that are the same size. If you try to run this code as is, it will compile and run correctly
 	 * If you uncomment the below lines and try to run it, you will receive a compile error
 	 * This is how we know our static_asserts in the header file are working correctly
 	 */
 	// auto matrixError1 = matrix1 + matrix3;
 	// auto matrixError2 = matrix1 += matrix3;
-	// std::cout << "Testing static_assert on operator+ (output should be an error message):\n";
-	// std::cout << matrixError1 << "\n";
-	// std::cout << "Testing static_assert on operator+= (output should be an error message):\n";
-	// std::cout << matrixError2 << "\n";
 
     return 0;
 }
