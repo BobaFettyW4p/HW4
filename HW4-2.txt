@@ -1,0 +1,11 @@
+ Please see the Matrix.h, PSMatrix.h, and OverloadMatrix.h for my direct implentations of determinant() methods for 2x2 matrices
+ As documented in the corresponding .cpp files, binaries that were compiled with the direct implentation observed a times savings of ~25%
+ My assumption as to why these time savings are observed is as follows:
+ The genericized implentation of Matrix.determinant() is a recursive function that calls itself multiple times to calculate the determinant
+ With an example of a 3x3 matrix, it will call itself recursively multiple times with  various sub-matrices of size 2x2
+ When our direct implementation of Matrix.determinant() is included, the genericized Matrix.determinant() function will 
+ instead call the more specific implementation when it applicable, which is more efficient
+ Prior to our direct implementation (or if our direct implementation is commented out), the generic Matrix.determinant()
+ function would simply call itself again instead.
+ Since the direct implementation is more efficient than the generic implementation at calculating the determinant of 2x2 matrices (at the cost of being unable to operate on matrices of any other size),
+ this has lead to the documented time savings.

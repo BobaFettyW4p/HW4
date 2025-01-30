@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
 project(HW4)
 set(CMAKE_CXX_STANDARD 20)
+add_executable(MatrixDeterminant Matrix.cpp)
+add_executable(PSMatrixDeterminant PSMatrix.cpp)
+add_executable(OverloadMatrixDeterminant OverloadMatrix.cpp)
 add_executable(for_EachOutput HW4-3.cpp)
 add_executable(addMatrices HW4-1.cpp)
